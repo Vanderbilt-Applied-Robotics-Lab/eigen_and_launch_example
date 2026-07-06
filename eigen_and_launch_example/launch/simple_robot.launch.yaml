@@ -1,0 +1,23 @@
+# Main launch file for eigen_and_launch_example
+# Applied Robotics
+# Garrison Johnston
+
+launch:
+    - arg:
+        name: 'link_length'
+        default: '1.0'
+    
+    - arg:
+        name: 'theta'
+        default: '0.0'
+
+    - node:
+        pkg: 'eigen_and_launch_example'
+        exec: 'simple_robot'
+        name: 'simple_robot'
+        args: '$(var link_length) $(var theta)'
+    
+    - node:
+        pkg: 'eigen_and_launch_example'
+        exec: 'joint_angle_publisher'
+        name: 'joint_angle_publisher'
