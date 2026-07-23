@@ -17,7 +17,7 @@ Example of using Eigen (C++ linear algebra library), launch files, and custom me
 ## Running Code
 1. Navigate to examples workspace: `cd ~/workspaces/examples_ws`
 2. Source the code: `source install/setup.bash`
-3. Run simple robot: `ros2 launch lecture3_example rotate_vector.launch.yaml <arg name>:=<value>`
+3. Run simple robot: `ros2 launch eigen_and_launch_example simple_robot.launch.yaml <arg name>:=<value>`
 
 The launch arguments are:
 
